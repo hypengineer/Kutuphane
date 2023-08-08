@@ -49,6 +49,7 @@ namespace Kutuphane.Web.Controllers
         [HttpPost]
         public IActionResult Create(Book book, List<Author> authors, List<Publisher> publishers)
         {
+            
             if (book.Name != null)
             {
 				unitOfWork.Books.Add(book);
